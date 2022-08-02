@@ -13,10 +13,10 @@ const input = document.querySelector("#validation-input")
 input.addEventListener("blur", test)
 
 function test () {
-    if(input.value.length < input.dataset.length){
+    if(input.value.length !== Number(input.dataset.length)){
         input.classList.add("invalid")
         return
-    }
+    } 
     input.classList.remove("invalid")
     input.classList.add("valid")
 }

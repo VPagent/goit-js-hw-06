@@ -20,7 +20,7 @@ const list = document.querySelector("#categories")
 const liElements = [...list.children]
 console.log(`Number of categories: ${liElements.length} \n `)
 
-const total = liElements.map(elem => {
+const total = liElements.forEach(elem => {
     console.log(`Category:  ${elem.firstElementChild.textContent}`)
     console.log(`Elements:  ${elem.lastElementChild.children.length} \n ` )
 

@@ -8,7 +8,9 @@ const output = document.querySelector("#name-output")
 input.addEventListener("input", rename)
 
 function rename () {
-    if(input.value !== false){
+    if(input.value === ""){
+        output.textContent = `Anonymous`
+    } else{
         output.textContent = input.value
-    }
+    }   
 }
